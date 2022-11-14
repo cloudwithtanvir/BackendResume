@@ -17,12 +17,12 @@ class DropListCreate(generics.ListCreateAPIView):
 
 
 def homePageView(request):
-    return HttpResponse('Hello, World!')
+    return HttpResponse('Hello, Please visit /admin page!')
 
 
 @api_view(["GET"])
 def refer(request):
-    refers = ["LinkedIn", "Facebook", "Job Portals", "Another website","Through a friend","At TagLog's event"]
+    refers = ["LinkedIn", "Facebook", "Job Portals", "Another website","Through a friend","At Bkash's event"]
     return Response(status=status.HTTP_200_OK, data={"data": refers})    
 
 # @api_view(["GET"])
